@@ -1,8 +1,8 @@
-import { SystemStyleObject, CSSObject } from '@styled-system/css'
-import { typography } from 'styled-system'
+import { SystemStyleObject } from '@styled-system/css'
 import styled from 'styled-components'
-import { sx, variant } from '../utils'
+import { typography } from 'styled-system'
 import { HumanThemeType } from 'theme'
+import { sx, variant } from '../utils'
 import { sizingDictionary } from './sizingDictionary'
 
 export type Text = {

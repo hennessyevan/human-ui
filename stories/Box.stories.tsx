@@ -1,24 +1,21 @@
-import { Box, GlobalStyles, HumanTheme } from '../'
 import React from 'react'
-import { ThemeProvider, useColorMode } from 'theme-ui'
+import { Box } from '../src'
 
 export default {
   title: 'Box',
 }
 
 export const basic = () => (
-  <ThemeProvider theme={HumanTheme}>
-    <GlobalStyles />
-    <Box backgroundColor="red" padding={[1, 10]}>
-      test
-    </Box>
-    <ThemeButton />
-  </ThemeProvider>
+  <Box
+    sx={{
+      backgroundColor: 'red',
+      width: '150px',
+      height: '150px',
+      padding: 2,
+      color: 'white',
+      borderRadius: 2,
+    }}
+  >
+    Simple Box
+  </Box>
 )
-
-const ThemeButton = () => {
-  const [colorMode, setColorMode] = useColorMode()
-  return (
-    <button onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}>Toggle</button>
-  )
-}

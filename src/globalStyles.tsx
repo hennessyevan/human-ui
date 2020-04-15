@@ -1,14 +1,11 @@
-import { Global } from '@emotion/core'
-import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyles = () => (
-  <Global
-    styles={theme => ({
-      '*': {
-        boxSizing: 'border-box',
-        fontFamily: theme.fonts.text,
-        fontSize: theme.fontSizes[3],
-      },
-    })}
-  />
-)
+export const GlobalStyles = createGlobalStyle(({ theme }) => ({
+  '*': {
+    boxSizing: 'border-box',
+    backgroundColor: theme.colors.background,
+    color: theme.colors.text,
+    fontFamily: theme.fonts.text,
+    fontSize: theme.fontSizes[6],
+  },
+}))

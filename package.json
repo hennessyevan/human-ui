@@ -17,7 +17,8 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "styled-components": "^5.1.0"
   },
   "husky": {
     "hooks": {
@@ -28,29 +29,38 @@
   "author": "hennessyevan",
   "module": "dist/human-ui.esm.js",
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-typescript": "^7.8.3",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-contexts": "^5.3.17",
-    "@storybook/addon-links": "^5.3.17",
-    "@storybook/addons": "^5.3.17",
-    "@storybook/react": "^5.3.17",
-    "@types/babel__core": "^7.1.6",
-    "@types/jest": "^25.1.4",
-    "@types/react": "^16.9.24",
-    "@types/react-dom": "^16.9.5",
-    "@types/theme-ui": "^0.3.0",
-    "babel-loader": "^8.0.6",
-    "babel-preset-react-app": "^9.1.1",
-    "husky": "^4.2.3",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "ts-loader": "^6.2.1",
-    "tsdx": "^0.12.3",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-contexts": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "@types/babel__core": "^7.1.7",
+    "@types/jest": "^25.2.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/styled-components": "^5.0.1",
+    "@types/styled-system": "^5.1.9",
+    "@types/styled-system__core": "npm:@peduarte/styled-system__core",
+    "@types/styled-system__css": "^5.0.8",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "husky": "^4.2.5",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0",
+    "ts-loader": "^6.2.2",
+    "tsdx": "^0.13.2",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "theme-ui": "^0.3.1"
+    "@styled-system/core": "^5.1.2",
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/variant": "^5.1.5",
+    "styled-system": "^5.1.5"
   }
 }
